@@ -32,5 +32,8 @@
     <ClInclude Include="..\..\code\headers\Kernel.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\code\headers\Task.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
