@@ -5,6 +5,7 @@ namespace engine
 	//Advance Statement
 	class  Entity;
 	
+	//Class container for a component
 	class Component
 	{
 	protected:

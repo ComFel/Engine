@@ -24,6 +24,9 @@
     <ClCompile Include="..\..\code\sources\Kernel.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\sources\Entity.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.hpp">
