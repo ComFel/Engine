@@ -101,6 +101,8 @@
     <ClCompile Include="..\..\code\sources\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\headers\Component.h" />
+    <ClInclude Include="..\..\code\headers\Entity.h" />
     <ClInclude Include="..\..\code\headers\Kernel.h" />
     <ClInclude Include="..\..\code\headers\Task.h" />
     <ClInclude Include="..\..\code\headers\Window.hpp" />

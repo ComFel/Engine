@@ -22,8 +22,8 @@ namespace engine
 
 		void Add_Task(Task * Task);
 
-		//with Std lib we create a list of pointers to all tasks created so the kernel can see the priority of tasks store into themselfes
-		std::set<Task*, Task::compareTaskPriorities> listOfTasks;
+		//with Std lib we create a list of pointers to all tasks created so the kernel can see the myPriority of tasks store into themselfes
+		std::set<Task*, Task::compare_Task_Priorities> listOfTasks;
 	};
 
 }
