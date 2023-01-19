@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\code\sources\Entity.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\sources\Transform.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.hpp">
@@ -42,6 +45,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\Entity.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Transform.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
