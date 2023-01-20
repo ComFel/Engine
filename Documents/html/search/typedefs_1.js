@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['bool1_0',['bool1',['../group__gtx__compatibility.html#gab65f19f5170f95a2f06d6aa6482c9405',1,'glm']]],
+  ['bool1x1_1',['bool1x1',['../group__gtx__compatibility.html#ga98d9d3da22aebc872ba38ce5afa0eff7',1,'glm']]],
+  ['bool2_2',['bool2',['../group__gtx__compatibility.html#gac7f837d12fbf968ddde75fc06cca9008',1,'glm']]],
+  ['bool2x2_3',['bool2x2',['../group__gtx__compatibility.html#gaa2ba9423e9e665f0c1d1e84e3fc0a6a5',1,'glm']]],
+  ['bool2x3_4',['bool2x3',['../group__gtx__compatibility.html#ga7b856c0dbb7fd13aabe1bfde40fae559',1,'glm']]],
+  ['bool2x4_5',['bool2x4',['../group__gtx__compatibility.html#ga12c38740d324578dab68f69b3e3bee50',1,'glm']]],
+  ['bool3_6',['bool3',['../group__gtx__compatibility.html#gad0de1cf3790bddc31e80ee83ce906d4a',1,'glm']]],
+  ['bool3x2_7',['bool3x2',['../group__gtx__compatibility.html#gab39a57f123f6fe3142b5b484aec8208d',1,'glm']]],
+  ['bool3x3_8',['bool3x3',['../group__gtx__compatibility.html#gab48b9be2d91e84403952c4c046581605',1,'glm']]],
+  ['bool3x4_9',['bool3x4',['../group__gtx__compatibility.html#ga0590cb2fc0f08faf6567b15bece81c5b',1,'glm']]],
+  ['bool4_10',['bool4',['../group__gtx__compatibility.html#gaf96e154f6cfdc613c71888f146865e6a',1,'glm']]],
+  ['bool4x2_11',['bool4x2',['../group__gtx__compatibility.html#gafa8598e593dd287fe75ab07fce8c4597',1,'glm']]],
+  ['bool4x3_12',['bool4x3',['../group__gtx__compatibility.html#ga986dab286cc34b35dcdbdae170870215',1,'glm']]],
+  ['bool4x4_13',['bool4x4',['../group__gtx__compatibility.html#ga6b3aaac6fbd4dff6b3f329013a85364b',1,'glm']]],
+  ['bvec1_14',['bvec1',['../group__ext__vector__bool1.html#ga30260c045e085bb8d19eddca772cac61',1,'glm']]],
+  ['bvec2_15',['bvec2',['../group__core__vector.html#ga7523cf292181cf7daef3aa0a3267d8e3',1,'glm']]],
+  ['bvec3_16',['bvec3',['../group__core__vector.html#ga3f07d6d37fc6fe875170fd5799685bcf',1,'glm']]],
+  ['bvec4_17',['bvec4',['../group__core__vector.html#ga6bb211b3d3bebae3867548d5673ca5cd',1,'glm']]],
+  ['byte_18',['byte',['../group__gtx__raw__data.html#gacd7fe1f2ad60a57f7d7ad4f1e6836efd',1,'glm']]]
+];
