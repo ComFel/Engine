@@ -1,3 +1,9 @@
+/// Código por:
+/// Felipe Vallejo Molina
+/// 
+/// felipevm07@gmail.com
+/// 2023.01
+
 
 #define GLM_GTX_transform
 

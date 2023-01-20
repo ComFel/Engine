@@ -1,12 +1,16 @@
-
+/// Código por:
+/// Felipe Vallejo Molina
+/// 
+/// felipevm07@gmail.com
+/// 2023.01
 
 #include <headers/Entity.h>
 
 namespace engine 
 {
-	Entity::Entity() 
+	Entity::Entity(std::string& entityID)
 	{
-		this->entityId = "0";		
+		this->entityId = entityID;		
 	}
 
     std::string Entity::Get_Entity_ID() const
@@ -19,17 +23,21 @@ namespace engine
     {
         for (auto & component : components)
         {
+            // Check if the pointer of the component is the same as the T (template)
             if (T * result = dynamic_cast<T *>(component.get()))
             {
                 return result;
             }
         }
+        // If the entity dont have any component requested
         return nullptr;
     }
 
     void Entity::Add_Component(std::unique_ptr<Component> component)
     {
         component->Set_Entity(this);
+
+        // Move the new component to the last position of the list
         components.push_back(std::move(component));
     }
 
@@ -68,4 +76,8 @@ namespace engine
         return this->isActive;
     }
 
+    Transform * Entity::Get_Transform()
+    {
+        return this->myTransform;
+    }
 }
