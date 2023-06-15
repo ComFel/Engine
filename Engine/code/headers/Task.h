@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -39,7 +39,7 @@ namespace engine
 
 		virtual void Initilize();
 		virtual void Run();
-		virtual void End();
+		virtual void Finalize();
 
 		// Compare tasks priorities to sort them to then use its correct order for the kernel to execute them
 		bool compare_Prior(Task* actual, Task* other)

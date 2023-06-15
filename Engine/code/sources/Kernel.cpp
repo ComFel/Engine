@@ -35,14 +35,14 @@ namespace engine
 			}
 		}
 
-		End();
+		Finalize();
 	}
 
-	void Kernel::End()
+	void Kernel::Finalize()
 	{
 		for (auto& currentTask : listOfTasks)
 		{
-			currentTask->End();
+			currentTask->Finalize();
 		}
 	}
 

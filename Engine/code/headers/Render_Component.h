@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -16,6 +16,7 @@ namespace engine
 {
     class Render_Component : public Component
     {
+    public:
         virtual glt::Node& Get_Node() = 0;    
     };
 }

@@ -2,10 +2,12 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
+
+//#include "Entity.h"
 
 namespace engine
 {
@@ -22,17 +24,17 @@ namespace engine
 
 	public:
 
-		// Constructor
-		virtual ~Component() = default;
+		// Deconstructor
+		//virtual ~Component() = default;
 
 		// Setup or initialization
-		virtual void Initilize() = 0;
+		//virtual void Initilize() = 0;
 
 		// Update of the component, physics ... that needs the component
-		virtual void Update()	 = 0;
+		//virtual void Update()	 = 0;
 
 		// Render of the logic necesary in case of a visual component
-		virtual void Render()	 = 0;
+		//virtual void Render()	 = 0;
 
 		// Set entity parent attachment
 		void Set_Entity(Entity * const entity) 
@@ -41,9 +43,9 @@ namespace engine
 		}
 
 		// Get parent attach to the component
-		Entity * Get_Entity() const
+		Entity* Get_Entity()
 		{
-			return this->myEntity;
+			return myEntity;
 		}
 	};
 }

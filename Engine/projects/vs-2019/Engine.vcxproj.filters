@@ -30,6 +30,18 @@
     <ClCompile Include="..\..\code\sources\Transform.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\sources\Scene.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\SceneManager.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\RenderSystem.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\CameraComponent.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.hpp">
@@ -54,6 +66,18 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\Render_Component.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Scene.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\SceneManager.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\RenderSystem.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\CameraComponent.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

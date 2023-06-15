@@ -96,17 +96,25 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\sources\CameraComponent.cpp" />
     <ClCompile Include="..\..\code\sources\Entity.cpp" />
     <ClCompile Include="..\..\code\sources\Kernel.cpp" />
     <ClCompile Include="..\..\code\sources\main.cpp" />
+    <ClCompile Include="..\..\code\sources\RenderSystem.cpp" />
+    <ClCompile Include="..\..\code\sources\Scene.cpp" />
+    <ClCompile Include="..\..\code\sources\SceneManager.cpp" />
     <ClCompile Include="..\..\code\sources\Transform.cpp" />
     <ClCompile Include="..\..\code\sources\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\headers\CameraComponent.hpp" />
     <ClInclude Include="..\..\code\headers\Component.h" />
     <ClInclude Include="..\..\code\headers\Entity.h" />
     <ClInclude Include="..\..\code\headers\Kernel.h" />
+    <ClInclude Include="..\..\code\headers\RenderSystem.hpp" />
     <ClInclude Include="..\..\code\headers\Render_Component.h" />
+    <ClInclude Include="..\..\code\headers\Scene.hpp" />
+    <ClInclude Include="..\..\code\headers\SceneManager.hpp" />
     <ClInclude Include="..\..\code\headers\System.h" />
     <ClInclude Include="..\..\code\headers\Task.h" />
     <ClInclude Include="..\..\code\headers\Transform.h" />

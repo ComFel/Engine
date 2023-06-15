@@ -28,9 +28,7 @@
 
         public:
 
-            Camera()
-            {
-            }
+            Camera() {}
 
             Camera(float fov, float near, float far, float aspect_ratio)
             {

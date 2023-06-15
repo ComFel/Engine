@@ -5,10 +5,14 @@
 /// 2023.01
 
 
+
 #pragma once
 
 #include <SDL.h>
 #include <OpenGL.hpp>
+#include "..\headers\Kernel.h"
+
+using namespace engine;
 
 int main()
 {

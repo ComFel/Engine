@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -37,7 +37,7 @@ namespace engine
 		// Set component parent link
 		void Set_Parent(Transform * parent);
 
-		// Get the matrix made with the variables to create then posible behaviours
+		// Get the matrix made with the variables to create the posible behaviours
 		glm::mat4 Get_Matrix() const;
 
 		// Functions to get the specific values of position, rotation and scale associated to the transform component

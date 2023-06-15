@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -17,6 +17,8 @@
 
 namespace engine
 {
+	class Scene;
+
 	//Class container of components (similar to empty GameObjects in Unity)
 	class Entity
 	{
@@ -24,7 +26,7 @@ namespace engine
 
 		// Id and list of the object which will have attachments of components and other containers if needed
 		std::string entityId;
-		std::vector<std::unique_ptr<Component>> components;
+		std::vector<Component*> components;
 		
 		// State of the Entity (object)
 		bool isActive = true;
@@ -33,19 +35,26 @@ namespace engine
 
 	public:
 
-		// Constructor and destructor of class
+		// Constructors and destructor of class
 		Entity(std::string & entityID);
 		~Entity() {};
 
-		std::string Get_Entity_ID() const;
+		Entity(Scene* scene);
+		Entity(Scene* scene, std::string& entityId);
+		// Create a child
+		Entity(Scene* scene, std::string& entityId, Transform* transform);
+		
+
+		std::string Get_Entity_ID();
+		void Set_Entity_ID(std::string entityId);
 
 		// With this function we can retrieve a specific component from the entity.
 		// T is used for each component created
-		template <typename T>
-		T * Get_Component();
+		//template <typename T>
+		//T * Get_Component();
 
 		// Add a component to the entity
-		void Add_Component(std::unique_ptr<Component> Component);
+		void Add_Component(Component* Component);
 
 		virtual void Initilize();
 		virtual void Update();

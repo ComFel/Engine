@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -20,9 +20,9 @@ namespace engine
 		// Constructor that sets the priority of the task, used to order its execution
 		explicit System(int priority) : Task(myPriority) {}
 
-		virtual void Initilize() = 0;
-		virtual void Run() = 0;
-		virtual void End() = 0;
+		virtual void Initilize() {};
+		virtual void Run() {};
+		virtual void Finalize() {};
 
 		// Destructor that is call from the derived classes
 		virtual ~System() = default;

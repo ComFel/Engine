@@ -2,7 +2,7 @@
 /// Felipe Vallejo Molina
 /// 
 /// felipevm07@gmail.com
-/// 2023.01
+/// 2023.06
 
 
 #pragma once
@@ -33,7 +33,7 @@ namespace engine
 		virtual void Run();
 
 		// For when we shut down the kernel
-		virtual void End();
+		virtual void Finalize();
 
 		// Set state of the kernel
 		void Set_Active(bool state);
