@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ComFel_Engine: Member List</title>
+<title>Engine: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ComFel_Engine
+   <div id="projectname">Engine
    </div>
+   <div id="projectbrief">Engine project in C++ by Felipe Vallejo Molina (C)2023</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classengine_1_1_transform.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceengine.html">engine</a></li><li class="navelem"><a class="el" href="classengine_1_1_transform.html">Transform</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">engine::Transform Member List</div></div>
 </div><!--header-->
@@ -72,30 +89,29 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Get_Entity</b>() const (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Get_Matrix</b>() const (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Get_Position</b>() const (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Get_Rotation</b>() const (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Get_Scale</b>() const (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Initilize</b>()=0 (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>myEntity</b> (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Render</b>()=0 (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Rotate</b>(glm::vec3 rotation) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Set_Entity</b>(Entity *const entity) (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Set_Parent</b>(Transform *parent) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Set_Position</b>(glm::vec3 position) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Set_Rotation</b>(glm::vec3 rotation) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Set_Scale</b>(glm::vec3 scale) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Transform</b>() (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Transform</b>(const float posX, const float posY, const float posZ, Transform *const entityParent=nullptr) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Transform</b>(glm::vec3 pos, glm::vec3 rot, glm::vec3 scale, Transform *const entityParent=nullptr) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Translate</b>(glm::vec3 tranlation) (defined in <a class="el" href="classengine_1_1_transform.html">engine::Transform</a>)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Update</b>()=0 (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Component</b>()=default (defined in <a class="el" href="classengine_1_1_component.html">engine::Component</a>)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_component.html#a169ed60943ea2d63c05efb982359f158">Get_Entity</a>()</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a550cabfb7610780519ff8384bfdebafb">Get_Matrix</a>() const</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a9eb60ac28112e09bef8c4d6f6bc6bfb5">Get_Position</a>() const</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a218ee230d81820d0b2eda11aed99713c">Get_Rotation</a>() const</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#ac50515efd188605938d94dc756d2d1e5">Get_Scale</a>() const</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_component.html#a70751e1598a37b6c305a101a04d5b73c">myEntity</a></td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a96402b0bc7ae23b6b58a35c3ba4829eb">Rotate</a>(glm::vec3 rotation)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_component.html#a46627952fc94bb504cfc1ef1cac49ec8">Set_Entity</a>(Entity *const entity)</td><td class="entry"><a class="el" href="classengine_1_1_component.html">engine::Component</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a891176cc5df3b78012ab43d81ecf3698">Set_Parent</a>(Transform *parent)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#ad72bedb08ac96b97afdbb03b3bb30b3e">Set_Position</a>(glm::vec3 position)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#acfd62fb33f293adff0b0c12e35137334">Set_Rotation</a>(glm::vec3 rotation)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a424d3c97c90721e9a073af43b1cf8f60">Set_Scale</a>(glm::vec3 scale)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a841085735bd5a1b74920e70129d026e9">Transform</a>()</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a34b288a6bfd9d9f157d7d65d0fe362f4">Transform</a>(const float posX, const float posY, const float posZ, Transform *const entityParent=nullptr)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classengine_1_1_transform.html#a7fc39f4f416c20b246f9493f95de613d">Transform</a>(glm::vec3 pos, glm::vec3 rot, glm::vec3 scale, Transform *const entityParent=nullptr)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classengine_1_1_transform.html#acef7bc47000f494dbb9d88eb8fc71ae3">Translate</a>(glm::vec3 tranlation)</td><td class="entry"><a class="el" href="classengine_1_1_transform.html">engine::Transform</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
 </body>
 </html>

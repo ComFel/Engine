@@ -1,23 +1,8 @@
 var searchData=
 [
-  ['_5fsdl_5fhas_5fbuiltin_0',['_SDL_HAS_BUILTIN',['../_s_d_l__stdinc_8h.html#a3089718d0deba90af8aba1106e9d9eef',1,'SDL_stdinc.h']]],
-  ['_5fswizzle_1',['_swizzle',['../structglm_1_1detail_1_1__swizzle.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase0_2',['_swizzle_base0',['../structglm_1_1detail_1_1__swizzle__base0.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase0_3c_20t_2c_202_20_3e_3',['_swizzle_base0&lt; T, 2 &gt;',['../structglm_1_1detail_1_1__swizzle__base0.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase0_3c_20t_2c_203_20_3e_4',['_swizzle_base0&lt; T, 3 &gt;',['../structglm_1_1detail_1_1__swizzle__base0.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase0_3c_20t_2c_204_20_3e_5',['_swizzle_base0&lt; T, 4 &gt;',['../structglm_1_1detail_1_1__swizzle__base0.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_6',['_swizzle_base1',['../structglm_1_1detail_1_1__swizzle__base1.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_202_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_2d1_2c_2d2_2c_20aligned_20_3e_7',['_swizzle_base1&lt; 2, T, P, vecType, E0, E1,-1,-2, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_012_00_01_t_00_01_p_00_01vec_type_00_01_e0_00_01_e1_00-1_00-2_00_01_aligned_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_202_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_2d1_2c_2d2_2c_20aligned_20_3e_8',['_swizzle_base1&lt; 2, T, Q, E0, E1,-1,-2, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_012_00_01_t_00_01_q_00_01_e0_00_01_e1_00-1_00-2_00_01_aligned_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_203_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_20e2_2c_2d1_2c_20aligned_20_3e_9',['_swizzle_base1&lt; 3, T, P, vecType, E0, E1, E2,-1, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_013_00_01_t_00_01_p_00_01vec_type_00_01_e0_00_01_e1_00_01_e2_00-1_00_01_aligned_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_203_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_20e2_2c_2d1_2c_20aligned_20_3e_10',['_swizzle_base1&lt; 3, T, Q, E0, E1, E2,-1, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_013_00_01_t_00_01_q_00_01_e0_00_01_e1_00_01_e2_00-1_00_01_aligned_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_204_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_20aligned_20_3e_11',['_swizzle_base1&lt; 4, T, P, vecType, E0, E1, E2, E3, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_014_00_01_t_00_01_p_00_01vec_type_00_01_e0_00_01_e1_0074d83cdf10610a072bf3157b31203824.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_204_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_20aligned_20_3e_12',['_swizzle_base1&lt; 4, T, Q, E0, E1, E2, E3, Aligned &gt;',['../structglm_1_1detail_1_1__swizzle__base1_3_014_00_01_t_00_01_q_00_01_e0_00_01_e1_00_01_e2_00_01_e3_00_01_aligned_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_20n_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_20detail_3a_3ais_5faligned_3c_20p_20_3e_3a_3avalue_20_3e_13',['_swizzle_base1&lt; N, T, P, vecType, E0, E1, E2, E3, detail::is_aligned&lt; P &gt;::value &gt;',['../structglm_1_1detail_1_1__swizzle__base1.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase1_3c_20n_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_20detail_3a_3ais_5faligned_3c_20q_20_3e_3a_3avalue_20_3e_14',['_swizzle_base1&lt; N, T, Q, E0, E1, E2, E3, detail::is_aligned&lt; Q &gt;::value &gt;',['../structglm_1_1detail_1_1__swizzle__base1.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase2_15',['_swizzle_base2',['../structglm_1_1detail_1_1__swizzle__base2.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase2_3c_20n_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_201_20_3e_16',['_swizzle_base2&lt; N, T, P, vecType, E0, E1, E2, E3, 1 &gt;',['../structglm_1_1detail_1_1__swizzle__base2_3_01_n_00_01_t_00_01_p_00_01vec_type_00_01_e0_00_01_e1_00_01_e2_00_01_e3_00_011_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase2_3c_20n_2c_20t_2c_20p_2c_20vectype_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_28e0_3d_3de1_7c_7ce0_3d_3de2_7c_7ce0_3d_3de3_7c_7ce1_3d_3de2_7c_7ce1_3d_3de3_7c_7ce2_3d_3de3_29_3e_17',['_swizzle_base2&lt; N, T, P, vecType, E0, E1, E2, E3,(E0==E1||E0==E2||E0==E3||E1==E2||E1==E3||E2==E3)&gt;',['../structglm_1_1detail_1_1__swizzle__base2.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase2_3c_20n_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_201_20_3e_18',['_swizzle_base2&lt; N, T, Q, E0, E1, E2, E3, 1 &gt;',['../structglm_1_1detail_1_1__swizzle__base2_3_01_n_00_01_t_00_01_q_00_01_e0_00_01_e1_00_01_e2_00_01_e3_00_011_01_4.html',1,'glm::detail']]],
-  ['_5fswizzle_5fbase2_3c_20n_2c_20t_2c_20q_2c_20e0_2c_20e1_2c_20e2_2c_20e3_2c_28e0_3d_3de1_7c_7ce0_3d_3de2_7c_7ce0_3d_3de3_7c_7ce1_3d_3de2_7c_7ce1_3d_3de3_7c_7ce2_3d_3de3_29_3e_19',['_swizzle_base2&lt; N, T, Q, E0, E1, E2, E3,(E0==E1||E0==E2||E0==E3||E1==E2||E1==E3||E2==E3)&gt;',['../structglm_1_1detail_1_1__swizzle__base2.html',1,'glm::detail']]]
+  ['add_5fcomponent_0',['Add_Component',['../classengine_1_1_entity.html#a54f91c290549ec07579bc1c8403adb47',1,'engine::Entity']]],
+  ['add_5ftask_1',['Add_Task',['../classengine_1_1_kernel.html#a1d72d1a3cc3da4173be9ff478e1b49fe',1,'engine::Kernel']]],
+  ['addcomponenttorender_2',['AddComponentToRender',['../classengine_1_1_render_system.html#a9d39db1f0890190721503ee9716d6cf0',1,'engine::RenderSystem']]],
+  ['addentittytoscene_3',['AddEntittyToScene',['../classengine_1_1_scene.html#acec9843bc923eeca2631f06402d33476',1,'engine::Scene']]],
+  ['addscene_4',['AddScene',['../classengine_1_1_scene_manager.html#a6673ae2476dfdabb070c8667056e6f61',1,'engine::SceneManager']]]
 ];

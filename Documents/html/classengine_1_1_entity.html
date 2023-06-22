@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ComFel_Engine: engine::Entity Class Reference</title>
+<title>Engine: engine::Entity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ComFel_Engine
+   <div id="projectname">Engine
    </div>
+   <div id="projectbrief">Engine project in C++ by Felipe Vallejo Molina (C)2023</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classengine_1_1_entity.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceengine.html">engine</a></li><li class="navelem"><a class="el" href="classengine_1_1_entity.html">Entity</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -72,24 +89,33 @@ $(function() {
   <div class="headertitle"><div class="title">engine::Entity Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_entity_8h_source.html">Entity.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae50a9159df245a404881ed131b61a134"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#ae50a9159df245a404881ed131b61a134">Entity</a> (std::string &amp;entityID)</td></tr>
 <tr class="separator:ae50a9159df245a404881ed131b61a134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf8e3c8d985405c48c41993b4405e71e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#aaf8e3c8d985405c48c41993b4405e71e">Get_Entity_ID</a> () const</td></tr>
-<tr class="separator:aaf8e3c8d985405c48c41993b4405e71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee3b6df7b90af8558aa8cd1ee44b70ba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aee3b6df7b90af8558aa8cd1ee44b70ba"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#aee3b6df7b90af8558aa8cd1ee44b70ba">Get_Component</a> ()</td></tr>
-<tr class="separator:aee3b6df7b90af8558aa8cd1ee44b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864b0bb0a06e7ed1acadad7958730f85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a864b0bb0a06e7ed1acadad7958730f85">Add_Component</a> (std::unique_ptr&lt; <a class="el" href="classengine_1_1_component.html">Component</a> &gt; <a class="el" href="classengine_1_1_component.html">Component</a>)</td></tr>
-<tr class="separator:a864b0bb0a06e7ed1acadad7958730f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069826fe65fe1cf07693f78b8808b0a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a069826fe65fe1cf07693f78b8808b0a4">Initilize</a> ()</td></tr>
-<tr class="separator:a069826fe65fe1cf07693f78b8808b0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d3206323ca40f886f77501b9f8e5f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a24d3206323ca40f886f77501b9f8e5f0">Update</a> ()</td></tr>
-<tr class="separator:a24d3206323ca40f886f77501b9f8e5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3d8bb0878b9ccfb007d972b5ba41f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#ada3d8bb0878b9ccfb007d972b5ba41f4">Render</a> ()</td></tr>
-<tr class="separator:ada3d8bb0878b9ccfb007d972b5ba41f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d047f787076925cf157e2644ad5f62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#ae1d047f787076925cf157e2644ad5f62">~Entity</a> ()</td></tr>
+<tr class="separator:ae1d047f787076925cf157e2644ad5f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53503d8221fed3831ccc1e3d3cf1ad87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a53503d8221fed3831ccc1e3d3cf1ad87">Entity</a> (<a class="el" href="classengine_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="separator:a53503d8221fed3831ccc1e3d3cf1ad87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6cd1bf6b90e42fd5ca4871419367d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a3e6cd1bf6b90e42fd5ca4871419367d7">Entity</a> (<a class="el" href="classengine_1_1_scene.html">Scene</a> *scene, std::string &amp;entityId)</td></tr>
+<tr class="separator:a3e6cd1bf6b90e42fd5ca4871419367d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fda21572c9717dcb61c19bc1ebdf1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#ae8fda21572c9717dcb61c19bc1ebdf1d">Entity</a> (<a class="el" href="classengine_1_1_scene.html">Scene</a> *scene, std::string &amp;entityId, <a class="el" href="classengine_1_1_transform.html">Transform</a> *transform)</td></tr>
+<tr class="separator:ae8fda21572c9717dcb61c19bc1ebdf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816ef712491ae64ac9f6f2d4a68726b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a816ef712491ae64ac9f6f2d4a68726b5">Get_Entity_ID</a> ()</td></tr>
+<tr class="separator:a816ef712491ae64ac9f6f2d4a68726b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4be541e3ff053b44cf23861ecea3ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#ad4be541e3ff053b44cf23861ecea3ae3">Set_Entity_ID</a> (std::string entityId)</td></tr>
+<tr class="separator:ad4be541e3ff053b44cf23861ecea3ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f91c290549ec07579bc1c8403adb47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a54f91c290549ec07579bc1c8403adb47">Add_Component</a> (<a class="el" href="classengine_1_1_component.html">Component</a> *<a class="el" href="classengine_1_1_component.html">Component</a>)</td></tr>
+<tr class="separator:a54f91c290549ec07579bc1c8403adb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b6557ad1c89973f7d84053f82d5435"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a53b6557ad1c89973f7d84053f82d5435">Initilize</a> ()</td></tr>
+<tr class="separator:a53b6557ad1c89973f7d84053f82d5435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f54df39d845fac2c8c565631c456ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a50f54df39d845fac2c8c565631c456ae">Update</a> ()</td></tr>
+<tr class="separator:a50f54df39d845fac2c8c565631c456ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b07f36c95917f6a95021dc22b41d57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a38b07f36c95917f6a95021dc22b41d57">Render</a> ()</td></tr>
+<tr class="separator:a38b07f36c95917f6a95021dc22b41d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1cda4766c5784d3a170bb5d1c78fc20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#af1cda4766c5784d3a170bb5d1c78fc20">Set_Entity_Status</a> (bool state)</td></tr>
 <tr class="separator:af1cda4766c5784d3a170bb5d1c78fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4577531addc1810372795c77dbd6712a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1_entity.html#a4577531addc1810372795c77dbd6712a">Get_Entity_Status</a> () const</td></tr>
@@ -99,10 +125,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00021">21</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00023">23</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae50a9159df245a404881ed131b61a134" name="ae50a9159df245a404881ed131b61a134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae50a9159df245a404881ed131b61a134">&#9670;&nbsp;</a></span>Entity()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50a9159df245a404881ed131b61a134">&#9670;&nbsp;</a></span>Entity() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +143,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00011">11</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00013">13</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -144,13 +170,99 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00038">38</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8h_source.html#l00040">40</a> of file <a class="el" href="_entity_8h_source.html">Entity.h</a>.</p>
+
+</div>
+</div>
+<a id="a53503d8221fed3831ccc1e3d3cf1ad87" name="a53503d8221fed3831ccc1e3d3cf1ad87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53503d8221fed3831ccc1e3d3cf1ad87">&#9670;&nbsp;</a></span>Entity() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00018">18</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e6cd1bf6b90e42fd5ca4871419367d7" name="a3e6cd1bf6b90e42fd5ca4871419367d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6cd1bf6b90e42fd5ca4871419367d7">&#9670;&nbsp;</a></span>Entity() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>entityId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00029">29</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae8fda21572c9717dcb61c19bc1ebdf1d" name="ae8fda21572c9717dcb61c19bc1ebdf1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fda21572c9717dcb61c19bc1ebdf1d">&#9670;&nbsp;</a></span>Entity() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>entityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_transform.html">Transform</a> *&#160;</td>
+          <td class="paramname"><em>transform</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00040">40</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a864b0bb0a06e7ed1acadad7958730f85" name="a864b0bb0a06e7ed1acadad7958730f85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a864b0bb0a06e7ed1acadad7958730f85">&#9670;&nbsp;</a></span>Add_Component()</h2>
+<a id="a54f91c290549ec07579bc1c8403adb47" name="a54f91c290549ec07579bc1c8403adb47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f91c290549ec07579bc1c8403adb47">&#9670;&nbsp;</a></span>Add_Component()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,37 +270,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void engine::Entity::Add_Component </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classengine_1_1_component.html">Component</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classengine_1_1_component.html">Component</a> *&#160;</td>
           <td class="paramname"><em>Component</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00036">36</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00075">75</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aee3b6df7b90af8558aa8cd1ee44b70ba" name="aee3b6df7b90af8558aa8cd1ee44b70ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee3b6df7b90af8558aa8cd1ee44b70ba">&#9670;&nbsp;</a></span>Get_Component()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T * engine::Entity::Get_Component</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00022">22</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aaf8e3c8d985405c48c41993b4405e71e" name="aaf8e3c8d985405c48c41993b4405e71e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf8e3c8d985405c48c41993b4405e71e">&#9670;&nbsp;</a></span>Get_Entity_ID()</h2>
+<a id="a816ef712491ae64ac9f6f2d4a68726b5" name="a816ef712491ae64ac9f6f2d4a68726b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816ef712491ae64ac9f6f2d4a68726b5">&#9670;&nbsp;</a></span>Get_Entity_ID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,12 +291,12 @@ template&lt;typename T &gt; </div>
           <td class="memname">std::string engine::Entity::Get_Entity_ID </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00016">16</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00050">50</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +315,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00074">74</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00113">113</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,12 +334,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00079">79</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00118">118</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a069826fe65fe1cf07693f78b8808b0a4" name="a069826fe65fe1cf07693f78b8808b0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a069826fe65fe1cf07693f78b8808b0a4">&#9670;&nbsp;</a></span>Initilize()</h2>
+<a id="a53b6557ad1c89973f7d84053f82d5435" name="a53b6557ad1c89973f7d84053f82d5435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b6557ad1c89973f7d84053f82d5435">&#9670;&nbsp;</a></span>Initilize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +348,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void engine::Entity::Initilize </td>
+          <td class="memname">virtual void engine::Entity::Initilize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -267,12 +361,10 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00045">45</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
-
 </div>
 </div>
-<a id="ada3d8bb0878b9ccfb007d972b5ba41f4" name="ada3d8bb0878b9ccfb007d972b5ba41f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada3d8bb0878b9ccfb007d972b5ba41f4">&#9670;&nbsp;</a></span>Render()</h2>
+<a id="a38b07f36c95917f6a95021dc22b41d57" name="a38b07f36c95917f6a95021dc22b41d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b07f36c95917f6a95021dc22b41d57">&#9670;&nbsp;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +373,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void engine::Entity::Render </td>
+          <td class="memname">virtual void engine::Entity::Render </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -294,7 +386,25 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00061">61</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+</div>
+</div>
+<a id="ad4be541e3ff053b44cf23861ecea3ae3" name="ad4be541e3ff053b44cf23861ecea3ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4be541e3ff053b44cf23861ecea3ae3">&#9670;&nbsp;</a></span>Set_Entity_ID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::Entity::Set_Entity_ID </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00055">55</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -314,12 +424,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00069">69</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00108">108</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a24d3206323ca40f886f77501b9f8e5f0" name="a24d3206323ca40f886f77501b9f8e5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d3206323ca40f886f77501b9f8e5f0">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a50f54df39d845fac2c8c565631c456ae" name="a50f54df39d845fac2c8c565631c456ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f54df39d845fac2c8c565631c456ae">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +438,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void engine::Entity::Update </td>
+          <td class="memname">virtual void engine::Entity::Update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -341,8 +451,6 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_entity_8cpp_source.html#l00053">53</a> of file <a class="el" href="_entity_8cpp_source.html">Entity.cpp</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -350,9 +458,13 @@ template&lt;typename T &gt; </div>
 <li>Engine/code/sources/<a class="el" href="_entity_8cpp_source.html">Entity.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceengine.html">engine</a></li><li class="navelem"><a class="el" href="classengine_1_1_entity.html">Entity</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+  </ul>
+</div>
 </body>
 </html>
