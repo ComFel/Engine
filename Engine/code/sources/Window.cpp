@@ -68,23 +68,21 @@ namespace engine
 
 	unsigned Window::Get_Window_Width() 
 	{
-		return this->width_Window;
-			
+		return (unsigned)this->width_Window;
 	}
 	
 	unsigned Window::Get_Window_Heigth()
 	{
-		return this->heigth_Window;
-			
+		return (unsigned)this->heigth_Window;
 	}
 
 	void Window::Clear_Window()
 	{
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		if (context) glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	}
 	void Window::Swap_Buffers()
 	{
-		SDL_GL_SwapWindow(window);
+		if (context) SDL_GL_SwapWindow(window);
 	}
 
 	void Window::Close_Window()

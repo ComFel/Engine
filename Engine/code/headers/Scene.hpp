@@ -6,8 +6,8 @@
 
 #pragma once
 
-#include <iostream>;
-#include <map>;
+#include <iostream>
+#include <map>
 #include "Entity.h"
 #include "Kernel.h"
 #include "RenderSystem.hpp"

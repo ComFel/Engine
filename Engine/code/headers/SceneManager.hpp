@@ -41,5 +41,8 @@ namespace engine
 		void SetDeactiveScene(string id);
 
 		// here created demo??
+		void CreateDemoEngineWindow();
+		void DeleteDemoEngineWindow();
+		void ResetDemoEngineWindow();
 	};
 }

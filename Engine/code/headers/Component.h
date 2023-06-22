@@ -7,8 +7,6 @@
 
 #pragma once
 
-//#include "Entity.h"
-
 namespace engine
 {
 	//Advance Statement
@@ -23,18 +21,6 @@ namespace engine
 		Entity* myEntity = nullptr;
 
 	public:
-
-		// Deconstructor
-		//virtual ~Component() = default;
-
-		// Setup or initialization
-		//virtual void Initilize() = 0;
-
-		// Update of the component, physics ... that needs the component
-		//virtual void Update()	 = 0;
-
-		// Render of the logic necesary in case of a visual component
-		//virtual void Render()	 = 0;
 
 		// Set entity parent attachment
 		void Set_Entity(Entity * const entity) 

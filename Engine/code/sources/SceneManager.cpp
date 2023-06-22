@@ -64,4 +64,22 @@ namespace engine
 			}
 		}
 	}
+
+	void SceneManager::CreateDemoEngineWindow()
+	{
+		Window* window = new Window("DemoEngine_1", 1280, 720, false);
+		Scene* scene = new Scene("Intro", *window);
+
+
+	}
+
+	void SceneManager::DeleteDemoEngineWindow() 
+	{
+
+	}
+
+	void SceneManager::ResetDemoEngineWindow() 
+	{
+
+	}
 }

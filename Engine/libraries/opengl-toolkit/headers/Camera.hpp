@@ -26,9 +26,7 @@
             float    aspect_ratio;
             Matrix44 projection_matrix;
 
-        public:
-
-            Camera() {}
+        public:           
 
             Camera(float fov, float near, float far, float aspect_ratio)
             {
