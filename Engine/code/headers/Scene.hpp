@@ -12,6 +12,8 @@
 #include "Kernel.h"
 #include "RenderSystem.hpp"
 #include "SceneManager.hpp"
+#include "InputSystem.hpp"
+#include "UpdateSystem.hpp"
 
 
 using namespace std;
@@ -44,5 +46,7 @@ namespace engine
 
 		//RenderSystem, ... systems
 		unique_ptr <RenderSystem> renderSystem;
+		unique_ptr <InputSystem > inputSystem;
+		unique_ptr <UpdateSystem> updateSystem;
 	};
 }

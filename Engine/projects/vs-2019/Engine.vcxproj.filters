@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\sources\main.cpp">
-      <Filter>SourceFiles</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\sources\Window.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
@@ -40,6 +37,15 @@
       <Filter>SourceFiles</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\sources\CameraComponent.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\MeshComponent.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\InputSystem.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\UpdateSystem.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
   </ItemGroup>
@@ -78,6 +84,18 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\CameraComponent.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\MeshComponent.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\InputSystem.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\UpdateSystem.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\UpdateComponent.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

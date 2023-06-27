@@ -8,11 +8,11 @@
 #pragma once
 
 
-#include <headers/Component.h>
+#include "Component.h"
 #include <vector>
 #include <memory>
 #include <string>
-#include <headers/Transform.h>
+#include "Transform.h"
 
 
 namespace engine

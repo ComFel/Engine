@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Engine: Engine/code/headers/Scene.hpp Source File</title>
+<title>Engine: Motor/Engine/code/headers/Scene.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,55 +96,63 @@ $(document).ready(function(){initNavTree('_scene_8hpp_source.html',''); initResi
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_kernel_8h.html">Kernel.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_render_system_8hpp.html">RenderSystem.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_manager_8hpp.html">SceneManager.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_input_system_8hpp.html">InputSystem.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_update_system_8hpp.html">UpdateSystem.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceengine.html">engine</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">class </span>Window;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html">   23</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1_scene.html">Scene</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">string</span> id;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        map&lt;string, Entity*&gt; entitysMap;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="classengine_1_1_kernel.html">Kernel</a>* kernel;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceengine.html">engine</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">class </span>Window;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html">   25</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1_scene.html">Scene</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">string</span> id;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        map&lt;string, Entity*&gt; entitysMap;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">// Constructor of class scene, need a ref to the window and a id to know what scene is</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="classengine_1_1_scene.html#ab91cb81a7c35de8ee31758d2b3eb7b21">Scene</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>, <a class="code hl_class" href="classengine_1_1_window.html">Window</a>&amp; window);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#ac42a476003efc2889d6dc2ae96c75d22">Initialize</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#a4d17fa6335fa2fda1ea0f22a0b5eb9db">Update</a>(<span class="keywordtype">float</span> time);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#a695cdfb6167e6bfcf175954c0acf9536">Render</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">   40</a></span>        <span class="keywordtype">string</span> <a class="code hl_function" href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">GetSceceName</a>() { <span class="keywordflow">return</span> id; }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classengine_1_1_kernel.html">Kernel</a>* kernel;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// Constructor of class scene, need a ref to the window and a id to know what scene is</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_function" href="classengine_1_1_scene.html#ab91cb81a7c35de8ee31758d2b3eb7b21">Scene</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>, <a class="code hl_class" href="classengine_1_1_window.html">Window</a>&amp; window);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#ac42a476003efc2889d6dc2ae96c75d22">Initialize</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#a4d17fa6335fa2fda1ea0f22a0b5eb9db">Update</a>(<span class="keywordtype">float</span> time);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#a695cdfb6167e6bfcf175954c0acf9536">Render</a>();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#acec9843bc923eeca2631f06402d33476">AddEntittyToScene</a>(<a class="code hl_class" href="classengine_1_1_entity.html">Entity</a>* entity);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_class" href="classengine_1_1_entity.html">Entity</a>* <a class="code hl_function" href="classengine_1_1_scene.html#ab3dee80d8ef0f6a365aa24e713f2f282">GetEntityInScene</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>* <span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="comment">//RenderSystem, ... systems</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">   46</a></span>        unique_ptr &lt;RenderSystem&gt; <a class="code hl_variable" href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">renderSystem</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    };</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">   42</a></span>        <span class="keywordtype">string</span> <a class="code hl_function" href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">GetSceceName</a>() { <span class="keywordflow">return</span> id; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1_scene.html#acec9843bc923eeca2631f06402d33476">AddEntittyToScene</a>(<a class="code hl_class" href="classengine_1_1_entity.html">Entity</a>* entity);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_class" href="classengine_1_1_entity.html">Entity</a>* <a class="code hl_function" href="classengine_1_1_scene.html#ab3dee80d8ef0f6a365aa24e713f2f282">GetEntityInScene</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>* <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">//RenderSystem, ... systems</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">   48</a></span>        unique_ptr &lt;RenderSystem&gt; <a class="code hl_variable" href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">renderSystem</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#ae8493060af4d29aa00589dae4a52153e">   49</a></span>        unique_ptr &lt;InputSystem &gt; <a class="code hl_variable" href="classengine_1_1_scene.html#ae8493060af4d29aa00589dae4a52153e">inputSystem</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classengine_1_1_scene.html#ab4f78280f0bb4c346f0781a0debce710">   50</a></span>        unique_ptr &lt;UpdateSystem&gt; <a class="code hl_variable" href="classengine_1_1_scene.html#ab4f78280f0bb4c346f0781a0debce710">updateSystem</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 <div class="ttc" id="a_entity_8h_html"><div class="ttname"><a href="_entity_8h.html">Entity.h</a></div></div>
+<div class="ttc" id="a_input_system_8hpp_html"><div class="ttname"><a href="_input_system_8hpp.html">InputSystem.hpp</a></div></div>
 <div class="ttc" id="a_kernel_8h_html"><div class="ttname"><a href="_kernel_8h.html">Kernel.h</a></div></div>
 <div class="ttc" id="a_render_system_8hpp_html"><div class="ttname"><a href="_render_system_8hpp.html">RenderSystem.hpp</a></div></div>
 <div class="ttc" id="a_scene_manager_8hpp_html"><div class="ttname"><a href="_scene_manager_8hpp.html">SceneManager.hpp</a></div></div>
+<div class="ttc" id="a_update_system_8hpp_html"><div class="ttname"><a href="_update_system_8hpp.html">UpdateSystem.hpp</a></div></div>
 <div class="ttc" id="aclassengine_1_1_entity_html"><div class="ttname"><a href="classengine_1_1_entity.html">engine::Entity</a></div><div class="ttdef"><b>Definition:</b> <a href="_entity_8h_source.html#l00023">Entity.h:24</a></div></div>
 <div class="ttc" id="aclassengine_1_1_kernel_html"><div class="ttname"><a href="classengine_1_1_kernel.html">engine::Kernel</a></div><div class="ttdef"><b>Definition:</b> <a href="_kernel_8h_source.html#l00017">Kernel.h:18</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html"><div class="ttname"><a href="classengine_1_1_scene.html">engine::Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00023">Scene.hpp:24</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_a4d17fa6335fa2fda1ea0f22a0b5eb9db"><div class="ttname"><a href="classengine_1_1_scene.html#a4d17fa6335fa2fda1ea0f22a0b5eb9db">engine::Scene::Update</a></div><div class="ttdeci">void Update(float time)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00030">Scene.cpp:30</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_a695cdfb6167e6bfcf175954c0acf9536"><div class="ttname"><a href="classengine_1_1_scene.html#a695cdfb6167e6bfcf175954c0acf9536">engine::Scene::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00032">Scene.cpp:32</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_aa12285a72d61984f8cf51e8a3fa0ac5e"><div class="ttname"><a href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">engine::Scene::renderSystem</a></div><div class="ttdeci">unique_ptr&lt; RenderSystem &gt; renderSystem</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00046">Scene.hpp:46</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_aa89ce2dd1818c0a63b1c2b286b62c7ce"><div class="ttname"><a href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">engine::Scene::GetSceceName</a></div><div class="ttdeci">string GetSceceName()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00040">Scene.hpp:40</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_ab3dee80d8ef0f6a365aa24e713f2f282"><div class="ttname"><a href="classengine_1_1_scene.html#ab3dee80d8ef0f6a365aa24e713f2f282">engine::Scene::GetEntityInScene</a></div><div class="ttdeci">Entity * GetEntityInScene(const string *id)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00058">Scene.cpp:58</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html"><div class="ttname"><a href="classengine_1_1_scene.html">engine::Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00025">Scene.hpp:26</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_a4d17fa6335fa2fda1ea0f22a0b5eb9db"><div class="ttname"><a href="classengine_1_1_scene.html#a4d17fa6335fa2fda1ea0f22a0b5eb9db">engine::Scene::Update</a></div><div class="ttdeci">void Update(float time)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00032">Scene.cpp:32</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_a695cdfb6167e6bfcf175954c0acf9536"><div class="ttname"><a href="classengine_1_1_scene.html#a695cdfb6167e6bfcf175954c0acf9536">engine::Scene::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00034">Scene.cpp:34</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_aa12285a72d61984f8cf51e8a3fa0ac5e"><div class="ttname"><a href="classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e">engine::Scene::renderSystem</a></div><div class="ttdeci">unique_ptr&lt; RenderSystem &gt; renderSystem</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00048">Scene.hpp:48</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_aa89ce2dd1818c0a63b1c2b286b62c7ce"><div class="ttname"><a href="classengine_1_1_scene.html#aa89ce2dd1818c0a63b1c2b286b62c7ce">engine::Scene::GetSceceName</a></div><div class="ttdeci">string GetSceceName()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00042">Scene.hpp:42</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_ab3dee80d8ef0f6a365aa24e713f2f282"><div class="ttname"><a href="classengine_1_1_scene.html#ab3dee80d8ef0f6a365aa24e713f2f282">engine::Scene::GetEntityInScene</a></div><div class="ttdeci">Entity * GetEntityInScene(const string *id)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00060">Scene.cpp:60</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_ab4f78280f0bb4c346f0781a0debce710"><div class="ttname"><a href="classengine_1_1_scene.html#ab4f78280f0bb4c346f0781a0debce710">engine::Scene::updateSystem</a></div><div class="ttdeci">unique_ptr&lt; UpdateSystem &gt; updateSystem</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00050">Scene.hpp:50</a></div></div>
 <div class="ttc" id="aclassengine_1_1_scene_html_ab91cb81a7c35de8ee31758d2b3eb7b21"><div class="ttname"><a href="classengine_1_1_scene.html#ab91cb81a7c35de8ee31758d2b3eb7b21">engine::Scene::Scene</a></div><div class="ttdeci">Scene(const string &amp;id, Window &amp;window)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00015">Scene.cpp:15</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_ac42a476003efc2889d6dc2ae96c75d22"><div class="ttname"><a href="classengine_1_1_scene.html#ac42a476003efc2889d6dc2ae96c75d22">engine::Scene::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00025">Scene.cpp:25</a></div></div>
-<div class="ttc" id="aclassengine_1_1_scene_html_acec9843bc923eeca2631f06402d33476"><div class="ttname"><a href="classengine_1_1_scene.html#acec9843bc923eeca2631f06402d33476">engine::Scene::AddEntittyToScene</a></div><div class="ttdeci">void AddEntittyToScene(Entity *entity)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00037">Scene.cpp:37</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_ac42a476003efc2889d6dc2ae96c75d22"><div class="ttname"><a href="classengine_1_1_scene.html#ac42a476003efc2889d6dc2ae96c75d22">engine::Scene::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00027">Scene.cpp:27</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_acec9843bc923eeca2631f06402d33476"><div class="ttname"><a href="classengine_1_1_scene.html#acec9843bc923eeca2631f06402d33476">engine::Scene::AddEntittyToScene</a></div><div class="ttdeci">void AddEntittyToScene(Entity *entity)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8cpp_source.html#l00039">Scene.cpp:39</a></div></div>
+<div class="ttc" id="aclassengine_1_1_scene_html_ae8493060af4d29aa00589dae4a52153e"><div class="ttname"><a href="classengine_1_1_scene.html#ae8493060af4d29aa00589dae4a52153e">engine::Scene::inputSystem</a></div><div class="ttdeci">unique_ptr&lt; InputSystem &gt; inputSystem</div><div class="ttdef"><b>Definition:</b> <a href="_scene_8hpp_source.html#l00049">Scene.hpp:49</a></div></div>
 <div class="ttc" id="aclassengine_1_1_window_html"><div class="ttname"><a href="classengine_1_1_window.html">engine::Window</a></div><div class="ttdef"><b>Definition:</b> <a href="_window_8hpp_source.html#l00017">Window.hpp:18</a></div></div>
 <div class="ttc" id="anamespaceengine_html"><div class="ttname"><a href="namespaceengine.html">engine</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_component_8hpp_source.html#l00018">CameraComponent.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -152,7 +160,7 @@ $(document).ready(function(){initNavTree('_scene_8hpp_source.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0b6ee6e7e9547e675db4add2e5de97da.html">Engine</a></li><li class="navelem"><a class="el" href="dir_03c45408dc6cdfeb1c1c1423b91cb592.html">code</a></li><li class="navelem"><a class="el" href="dir_8028e3bb72c0c971063be8ad87ba00f1.html">headers</a></li><li class="navelem"><a class="el" href="_scene_8hpp.html">Scene.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_1f109aa6ed4c97926792d99c27d79275.html">Motor</a></li><li class="navelem"><a class="el" href="dir_fa9446d185f3c1d5bebbb7e722db8dc9.html">Engine</a></li><li class="navelem"><a class="el" href="dir_a80b1e87bfe6a73745761a35d67b3653.html">code</a></li><li class="navelem"><a class="el" href="dir_ea3e61d983858c6e9a1db45543c7c0e5.html">headers</a></li><li class="navelem"><a class="el" href="_scene_8hpp.html">Scene.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>

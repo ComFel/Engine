@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#include <headers/Scene.hpp>
+#include "Scene.hpp"
 #include <vector>
 
 namespace engine
@@ -37,6 +37,9 @@ namespace engine
 
 		Scene* GetScene(size_t number);
 		Scene* GetScene(string id);
+
+		void ActiveScene(string id);
+
 		void SetDeactiveScene(size_t number);
 		void SetDeactiveScene(string id);
 

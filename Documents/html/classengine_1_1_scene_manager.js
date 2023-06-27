@@ -2,6 +2,7 @@ var classengine_1_1_scene_manager =
 [
     [ "SceneManager", "classengine_1_1_scene_manager.html#aeba5568fd59355e6460643f47f5c1e0e", null ],
     [ "SceneManager", "classengine_1_1_scene_manager.html#adf59feb284c0f70fae4a03da77facc9d", null ],
+    [ "ActiveScene", "classengine_1_1_scene_manager.html#a3b52260591b3df0f0848c6adf1efa3c7", null ],
     [ "AddScene", "classengine_1_1_scene_manager.html#a6673ae2476dfdabb070c8667056e6f61", null ],
     [ "CreateDemoEngineWindow", "classengine_1_1_scene_manager.html#a91f76419ce90386300850f99413c87d2", null ],
     [ "DeleteDemoEngineWindow", "classengine_1_1_scene_manager.html#a68529d1777224fd44f54108a27494424", null ],

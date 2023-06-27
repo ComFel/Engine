@@ -10,7 +10,6 @@ using namespace std;
 
 #include "..\headers\SceneManager.hpp"
 
-
 namespace engine
 {
 
@@ -47,6 +46,18 @@ namespace engine
 		return nullptr;
 	}
 
+	void SceneManager::ActiveScene(string id) 
+	{
+		for (size_t i = 0; i < scenes.size(); i++)
+		{
+			if (scenes[i]->GetSceceName() == id) 
+			{
+				scenes[i]->Initialize();
+				activeScenes.push_back(i);
+			}
+		}
+	}
+
 	void SceneManager::SetDeactiveScene(size_t number) 
 	{
 		if (number >= scenes.size()) return;
@@ -68,9 +79,38 @@ namespace engine
 	void SceneManager::CreateDemoEngineWindow()
 	{
 		Window* window = new Window("DemoEngine_1", 1280, 720, false);
-		Scene* scene = new Scene("Intro", *window);
+		Scene* scene   = new Scene("Intro", *window);
+
+		string path = "../../assets/sphere.obj";
+
+		string playLeft  = "LeftBar";
+		string playRight = "RightBar";
+		string playBall  = "Ball";
+
+		Entity* camera		= new Entity(scene);
+		Entity* playerLeft  = new Entity(scene, playLeft);
+		Entity* playerRight = new Entity(scene, playRight);
+		Entity* ball		= new Entity(scene, playBall);
+		
+
+		GetScene("Intro")->renderSystem->CreateAndAddMeshToRender(ball, path);
+		
+		GetScene("Intro")->renderSystem->CreateAndAddCameraToRender(camera);	
+
+		//input System with player (update)
+		playerLeft ->Get_Transform()->Set_Position(Vector3(0,0,0));
+		playerRight->Get_Transform()->Set_Position(Vector3(0,0,0));
+
+		ball->Get_Transform()->Set_Position(Vector3(0, 0, 0));	
 
 
+		GetScene("Intro")->updateSystem->AddPlayerComponent(playerLeft , 0.1f, *GetScene("Intro")->inputSystem);
+		GetScene("Intro")->updateSystem->AddPlayerComponent(playerRight, 0.1f, *GetScene("Intro")->inputSystem);
+
+		GetScene("Intro")->updateSystem->AddBallComponent(ball, 0.3f, ball->Get_Transform());
+
+		// Initialize kernel
+		ActiveScene("Intro");
 	}
 
 	void SceneManager::DeleteDemoEngineWindow() 

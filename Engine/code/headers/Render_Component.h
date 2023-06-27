@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include <headers/Component.h>
+#include "Component.h"
 #include <Render_Node.hpp>
 
 

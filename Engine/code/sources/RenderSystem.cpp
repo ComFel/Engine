@@ -9,6 +9,7 @@
 #include "..\headers\RenderSystem.hpp"
 #include "..\headers\Entity.h"
 #include "..\headers\CameraComponent.hpp"
+#include "..\headers\MeshComponent.hpp"
 
 using namespace std;
 using namespace glt;
@@ -51,6 +52,11 @@ namespace engine
 	void RenderSystem::AddComponentToRender(Render_Component* component) 
 	{
 		renderComponents.push_back(component);
+	}
+
+	void RenderSystem::CreateAndAddMeshToRender(Entity* entity, string path)
+	{
+		AddComponentToRender(new MeshComponent(entity, path, *this));
 	}
 
 	void RenderSystem::CreateAndAddCameraToRender(Entity* entity)

@@ -8,8 +8,10 @@
 #pragma once
 
 
-#include <headers/Component.h>
+#include "Component.h"
 #include <glm/glm.hpp>
+
+using namespace glm;
 
 namespace engine 
 {
@@ -20,9 +22,9 @@ namespace engine
 	private:
 
 		// Variables that containes the information needed of position, rotation and scale to work with
-		glm::vec3 position;
-		glm::vec3 rotation;
-		glm::vec3 scale;
+		vec3 position;
+		vec3 rotation;
+		vec3 scale;
 
 		// Parent attachment to the transform component
 		Transform * entityParent;
@@ -32,27 +34,27 @@ namespace engine
 		// Constructors, one by default, other with specific position and the last one with all sort of information
 		Transform();
 		Transform(const float posX, const float posY, const float posZ, Transform* const entityParent = nullptr);
-		Transform(glm::vec3 pos, glm::vec3 rot, glm::vec3 scale, Transform* const entityParent = nullptr);
+		Transform(vec3 pos, vec3 rot, vec3 scale, Transform* const entityParent = nullptr);
 		
 		// Set component parent link
 		void Set_Parent(Transform * parent);
 
 		// Get the matrix made with the variables to create the posible behaviours
-		glm::mat4 Get_Matrix() const;
+		mat4 Get_Matrix() const;
 
 		// Functions to get the specific values of position, rotation and scale associated to the transform component
-		glm::vec3 Get_Position() const;
-		glm::vec3 Get_Rotation() const;
-		glm::vec3 Get_Scale() const;
+		vec3 Get_Position() const;
+		vec3 Get_Rotation() const;
+		vec3 Get_Scale() const;
 
 		// Functions to set the specific values of position, rotation and scale associated to the transform component
-		void Set_Position(glm::vec3 position);
-		void Set_Rotation(glm::vec3 rotation);
-		void Set_Scale(glm::vec3 scale);
+		void Set_Position(vec3 position);
+		void Set_Rotation(vec3 rotation);
+		void Set_Scale(vec3 scale);
 
 		// Functions to set a specific behaviour associated to the transform component (related to movement, position and rotation)
-		void Translate(glm::vec3 tranlation);
-		void Rotate(glm::vec3 rotation);
+		void Translate(vec3 tranlation);
+		void Rotate(vec3 rotation);
 	};
 
 

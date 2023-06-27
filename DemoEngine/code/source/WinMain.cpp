@@ -5,14 +5,15 @@
 /// felipevm07@gmail.com
 /// 2023.06
 
-#define WIN32_LEAN_AND_MEAN
-#define VC_EXTRALEAN
+#if defined(_WIN32) || defined(_WIN64)
 
-#include <Windows.h>
+#include <windows.h>
 
-int main ();
+extern int main(int, char**);
 
-int WINAPI WinMain (HINSTANCE, HINSTANCE, LPSTR, INT)
+int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
-	return main ();
+    return main(__argc, __argv);
 }
+
+#endif

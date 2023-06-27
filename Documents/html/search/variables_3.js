@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rendernode_0',['renderNode',['../classengine_1_1_render_system.html#a97741552159e2c2c878d8f3b6a5e8419',1,'engine::RenderSystem']]],
-  ['rendersystem_1',['renderSystem',['../classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e',1,'engine::Scene']]]
+  ['myentity_0',['myEntity',['../classengine_1_1_component.html#a70751e1598a37b6c305a101a04d5b73c',1,'engine::Component']]],
+  ['mypriority_1',['myPriority',['../classengine_1_1_task.html#adab14860bbc3f03d36abc62b28b1e3e5',1,'engine::Task']]]
 ];

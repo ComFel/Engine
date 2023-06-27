@@ -26,6 +26,8 @@ namespace engine
 
 		vector<Render_Component*> renderComponents;
 
+		void AddComponentToRender(Render_Component* component);
+
 	public:
 		RenderSystem(Window* window, int prior, Kernel* kernel);
 		
@@ -33,8 +35,7 @@ namespace engine
 
 		void Run() override;
 
-		void AddComponentToRender(Render_Component* component);
-
+		void CreateAndAddMeshToRender(Entity* entity, string path);
 		void CreateAndAddCameraToRender(Entity* entity);
 	};
 }

@@ -4,13 +4,14 @@
 /// felipevm07@gmail.com
 /// 2023.06
 
-//#include "SceneManager.hpp"
 
-//using namespace engine;
+#include "SceneManager.hpp"
 
-int main() 
+using namespace engine;
+
+int main(int, char**) 
 {
-	//SceneManager::instance().CreateDemoEngineWindow();
+	SceneManager::instance().CreateDemoEngineWindow();
 
 	return 0;
 }

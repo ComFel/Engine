@@ -20,6 +20,8 @@ namespace engine
 		SceneManager::instance().AddScene(this);
 
 		renderSystem.reset(new RenderSystem(&window, 0, kernel));
+		inputSystem.reset(new InputSystem  (		 1, kernel));
+		updateSystem.reset(new UpdateSystem(		 2, kernel));
 	}
 
 	void Scene::Initialize() 

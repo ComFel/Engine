@@ -7,5 +7,7 @@ var classengine_1_1_scene =
     [ "Initialize", "classengine_1_1_scene.html#ac42a476003efc2889d6dc2ae96c75d22", null ],
     [ "Render", "classengine_1_1_scene.html#a695cdfb6167e6bfcf175954c0acf9536", null ],
     [ "Update", "classengine_1_1_scene.html#a4d17fa6335fa2fda1ea0f22a0b5eb9db", null ],
-    [ "renderSystem", "classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e", null ]
+    [ "inputSystem", "classengine_1_1_scene.html#ae8493060af4d29aa00589dae4a52153e", null ],
+    [ "renderSystem", "classengine_1_1_scene.html#aa12285a72d61984f8cf51e8a3fa0ac5e", null ],
+    [ "updateSystem", "classengine_1_1_scene.html#ab4f78280f0bb4c346f0781a0debce710", null ]
 ];
