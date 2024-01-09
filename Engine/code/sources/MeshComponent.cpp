@@ -1,3 +1,8 @@
+/// Código por:
+/// Felipe Vallejo Molina
+/// 
+/// felipevm07@gmail.com
+/// 2024.01
 
 #include <headers/MeshComponent.hpp>
 #include <headers/Entity.h>

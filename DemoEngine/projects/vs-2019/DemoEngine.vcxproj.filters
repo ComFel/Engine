@@ -18,8 +18,5 @@
     <ClCompile Include="..\..\code\source\main.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\WinMain.cpp">
-      <Filter>SourceFiles</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -48,6 +48,9 @@
     <ClCompile Include="..\..\code\sources\UpdateSystem.cpp">
       <Filter>SourceFiles</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\DemoEngine\code\source\WinMain.cpp">
+      <Filter>SourceFiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\Window.hpp">
