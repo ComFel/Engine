@@ -69,7 +69,7 @@
     </Link>
     <Lib>
       <AdditionalLibraryDirectories>opengl-toolkit-debug.lib;..\..\libraries\glm-0.9.9.7\include\glm;..\..\libraries\opengl-toolkit\lib;..\..\libraries\sdl2\x64\lib;SDL2-staticd.lib;SDL2maind.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2maind.lib;SDL2-staticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2maind.lib;SDL2-staticd.lib;opengl-toolkit-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -94,8 +94,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>opengl-toolkit-release.lib;..\..\libraries\glm-0.9.9.7\include\glm;..\..\libraries\opengl-toolkit\lib;..\..\libraries\sdl2\x64\lib;SDL2-static.lib;SDL2main.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2main.lib;SDL2-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>opengl-toolkit-release.lib;..\..\libraries\glm-0.9.9.7\include\glm;..\..\libraries\opengl-toolkit\lib\x64;..\..\libraries\sdl2\x64\lib;SDL2-static.lib;SDL2main.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2-static.lib;opengl-toolkit-release.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
