@@ -1,0 +1,25 @@
+var group__gtx__rotate__vector =
+[
+    [ "glm::orientation", "group__gtx__rotate__vector.html#ga19cb24de97f02935ee66fc82f77d229f", null ],
+    [ "glm::orientation", "group__gtx__rotate__vector.html#ga83099d005b4af6a7a0d882ff6eb1a536", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#ga59a6b1e06a51c0732a9ee0dabd10d451", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#ga48e09564e1ab9d4f8f5ef1fb64aae241", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#gaad180774123cd43992f8a9f4557fca4e", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#ga425a0ad3cfa89f8cfee1bab79021a755", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#gaa9033100ff2f16c01fefb01a88769f27", null ],
+    [ "glm::rotate", "group__gtx__rotate__vector.html#ga49e6da0fe1423e934b338a62863f5fdc", null ],
+    [ "glm::rotateX", "group__gtx__rotate__vector.html#gae25ff76be4460ce4a3b19a3a9cab2cfa", null ],
+    [ "glm::rotateX", "group__gtx__rotate__vector.html#ga550b0aa1a4a762eacd014c0b42f26100", null ],
+    [ "glm::rotateX", "group__gtx__rotate__vector.html#gac6eaef961618708cb36c1af282ffe31a", null ],
+    [ "glm::rotateX", "group__gtx__rotate__vector.html#ga673011e54271028cbf095ab39f870d77", null ],
+    [ "glm::rotateY", "group__gtx__rotate__vector.html#gaa514f6bc29efd2fd38857948d4cbf4ab", null ],
+    [ "glm::rotateY", "group__gtx__rotate__vector.html#ga27345abf5b7ace94b8cee7c510611e46", null ],
+    [ "glm::rotateY", "group__gtx__rotate__vector.html#ga919122e3280a912f4bece1d7d3db7d37", null ],
+    [ "glm::rotateY", "group__gtx__rotate__vector.html#ga60a21500f2564a7ed52cab7fb207ca1f", null ],
+    [ "glm::rotateZ", "group__gtx__rotate__vector.html#ga68fdb4f34ad1f97355fb0e8775333db7", null ],
+    [ "glm::rotateZ", "group__gtx__rotate__vector.html#ga95a7652b1b0ce280965f44f88c43948e", null ],
+    [ "glm::rotateZ", "group__gtx__rotate__vector.html#ga94df0a5dbacf290055b52fa8f57bc3ef", null ],
+    [ "glm::rotateZ", "group__gtx__rotate__vector.html#ga7baf259d6570d93e260ed3b5584239ba", null ],
+    [ "glm::slerp", "group__gtx__rotate__vector.html#ga38c5b0b21ad3e33c3412da1049d1b168", null ],
+    [ "glm::slerp", "group__gtx__rotate__vector.html#ga13360ebcb219dc64f9c58964ad99337c", null ]
+];
