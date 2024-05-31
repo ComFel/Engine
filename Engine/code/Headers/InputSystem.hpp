@@ -10,6 +10,8 @@
 #include <SDL.h>
 #include <vector>
 #include <Kernel.h>
+#include <RecieverComponent.h>
+
 
 using namespace std;
 
@@ -18,13 +20,13 @@ namespace engine
 	class InputSystem : public System
 	{
 	protected:
-		vector<SDL_Event*> inputRecivers;
+		vector<ReciverComponet*> inputRecivers;
 
 	public:
 
 		InputSystem(int priority, Kernel* kernel);
 
 		void Run() override;
-		void AddReciver(SDL_Event * reciver);
+		void AddReciver(ReciverComponet* reciver);
 	};
 }

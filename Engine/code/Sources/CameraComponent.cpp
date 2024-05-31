@@ -14,6 +14,6 @@ namespace engine
 	{
 		this->myEntity = entity;
 		camera.reset(new Camera(fov, near, far, aspectRadio));
-		renderSystem.renderNode->add(myEntity->Get_Entity_ID(), camera);
+		renderSystem.renderNode->add(*myEntity->Get_Entity_ID(), camera);
 	}
 }

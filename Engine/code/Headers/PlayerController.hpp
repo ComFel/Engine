@@ -8,10 +8,11 @@
 
 #include <UpdateComponent.hpp>
 #include <InputSystem.hpp>
+#include <PlayerReader.h>
 
 namespace engine
 {
-	class PlayerController : UpdateComponent
+	class PlayerController : public UpdateComponent
 	{
 	private:
 		int dirUp;
@@ -21,11 +22,11 @@ namespace engine
 	public:
 		PlayerController(Entity* entity, float speed, InputSystem& inputSystem);
 
-		void Set_Speed(float speed);
+		void  Set_Speed(float speed);
 		float Get_Speed();
 
 		void Update() override;
 
-		void Set_Direction(bool up);
+		void Set_Direction(int dirUp, int dirDown);
 	};
 }

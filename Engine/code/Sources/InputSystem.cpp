@@ -23,6 +23,8 @@ namespace engine
 		{
 			for (auto reciever : inputRecivers)
 			{
+				reciever->Reciver(inputEvent);
+
 				// ToDo : Make class for reciver?
 				
 				// if (inputEvent.type == SDL_KEYDOWN)
@@ -39,7 +41,7 @@ namespace engine
 		}
 	}
 
-	void InputSystem::AddReciver(SDL_Event* reciver)
+	void InputSystem::AddReciver(ReciverComponet* reciver)
 	{
 		inputRecivers.push_back(reciver);
 	}

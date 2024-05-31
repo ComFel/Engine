@@ -86,7 +86,7 @@ namespace engine
 	}
 	void Window::Swap_Buffers()
 	{
-		if (context) SDL_GL_SwapWindow(window);
+		if (context) SDL_GL_SwapWindow(this->window);
 	}
 
 	void Window::Close_Window()

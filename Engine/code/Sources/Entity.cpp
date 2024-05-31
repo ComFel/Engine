@@ -47,9 +47,9 @@ namespace engine
         Add_Component(this->myTransform);
     }
 
-    std::string Entity::Get_Entity_ID()
+    std::string* Entity::Get_Entity_ID()
     {
-        return this->entityId;
+        return &entityId;
     }
 
     void Entity::Set_Entity_ID(std::string entityId)

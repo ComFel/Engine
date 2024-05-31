@@ -4,8 +4,8 @@
 /// felipevm07@gmail.com
 /// 2024.01
 
-#include "..\headers\UpdateSystem.hpp"
-
+#include <UpdateSystem.hpp>
+#include <PlayerController.hpp>
 
 namespace engine
 {
@@ -26,6 +26,7 @@ namespace engine
 	void UpdateSystem::AddPlayerComponent(Entity* entity, float speed, InputSystem& inputSystem) 
 	{
 		// Add players update status to the update to be managed from the sceneManager
+		componentsUpdate.push_back(new PlayerController(entity, speed, inputSystem));
 	}
 
 	void UpdateSystem::AddBallComponent(Entity* entity, float speed, Transform* position) 

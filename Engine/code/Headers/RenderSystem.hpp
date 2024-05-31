@@ -37,5 +37,6 @@ namespace engine
 
 		void CreateAndAddMeshToRender(Entity* entity, string path);
 		void CreateAndAddCameraToRender(Entity* entity);
+		void CreateAndAddLightToRender(Entity* entity);
 	};
 }

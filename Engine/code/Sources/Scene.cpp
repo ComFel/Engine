@@ -36,22 +36,22 @@ namespace engine
 	void Scene::AddEntittyToScene(Entity* entity)
 	{
 		// Check the map if the entity already exists
-		if(entitysMap.find(entity->Get_Entity_ID()) != entitysMap.end())
+		if(entitysMap.find(*entity->Get_Entity_ID()) != entitysMap.end())
 		{
 			// Create a id for the new entity
 			unsigned iterator = 0;
-			string temp = entity->Get_Entity_ID();
+			string temp = *entity->Get_Entity_ID();
 
 			while(entitysMap.find(temp) != entitysMap.end())
 			{
 				++iterator;
-				temp = entity->Get_Entity_ID() + to_string(iterator);
+				temp = *entity->Get_Entity_ID() + to_string(iterator);
 			}
 
 			entity->Set_Entity_ID(temp);
 		}
 
-		entitysMap.insert(pair<string, Entity*>(entity->Get_Entity_ID(), entity));
+		entitysMap.insert(pair<string, Entity*>(*entity->Get_Entity_ID(), entity));
 	}
 
 	Entity* Scene::GetEntityInScene(const string* id) { return this->entitysMap[*id]; }

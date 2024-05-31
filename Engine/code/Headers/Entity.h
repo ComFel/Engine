@@ -46,7 +46,7 @@ namespace engine
 		Entity(Scene* scene, std::string& entityId, Transform* transform);
 		
 
-		std::string Get_Entity_ID();
+		std::string* Get_Entity_ID();
 		void Set_Entity_ID(std::string entityId);
 
 		// With this function we can retrieve a specific component from the entity.

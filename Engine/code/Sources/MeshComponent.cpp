@@ -15,7 +15,7 @@ namespace engine
 		myEntity->Add_Component(this);
 
 		AssignModel(path);
-		renderSystem.renderNode->add(myEntity->Get_Entity_ID(), model);
+		renderSystem.renderNode->add(*myEntity->Get_Entity_ID(), model);
 	}
 
 	void MeshComponent::AssignModel(const string& path) 

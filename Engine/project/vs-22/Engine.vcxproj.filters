@@ -54,6 +54,12 @@
     <ClCompile Include="..\..\code\Sources\UpdateSystem.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\Sources\PlayerReader.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Sources\LightComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Headers\Window.hpp">
@@ -105,6 +111,15 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\Headers\UpdateSystem.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Headers\RecieverComponent.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Headers\PlayerReader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Headers\LightComponent.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

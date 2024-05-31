@@ -28,7 +28,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -102,8 +102,10 @@
     <ClCompile Include="..\..\code\Sources\Entity.cpp" />
     <ClCompile Include="..\..\code\Sources\InputSystem.cpp" />
     <ClCompile Include="..\..\code\Sources\Kernel.cpp" />
+    <ClCompile Include="..\..\code\Sources\LightComponent.cpp" />
     <ClCompile Include="..\..\code\Sources\MeshComponent.cpp" />
     <ClCompile Include="..\..\code\Sources\PlayerController.cpp" />
+    <ClCompile Include="..\..\code\Sources\PlayerReader.cpp" />
     <ClCompile Include="..\..\code\Sources\RenderSystem.cpp" />
     <ClCompile Include="..\..\code\Sources\Scene.cpp" />
     <ClCompile Include="..\..\code\Sources\SceneManager.cpp" />
@@ -118,8 +120,11 @@
     <ClInclude Include="..\..\code\Headers\Entity.h" />
     <ClInclude Include="..\..\code\Headers\InputSystem.hpp" />
     <ClInclude Include="..\..\code\Headers\Kernel.h" />
+    <ClInclude Include="..\..\code\Headers\LightComponent.h" />
     <ClInclude Include="..\..\code\Headers\MeshComponent.hpp" />
     <ClInclude Include="..\..\code\Headers\PlayerController.hpp" />
+    <ClInclude Include="..\..\code\Headers\PlayerReader.h" />
+    <ClInclude Include="..\..\code\Headers\RecieverComponent.h" />
     <ClInclude Include="..\..\code\Headers\RenderSystem.hpp" />
     <ClInclude Include="..\..\code\Headers\Render_Component.h" />
     <ClInclude Include="..\..\code\Headers\Scene.hpp" />

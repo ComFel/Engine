@@ -79,9 +79,11 @@ namespace engine
 
 	// Pasar a scene manager a DemoEngine en main.cpp
 	void SceneManager::CreateDemoEngineWindow()
-	{
+	{		
 		Window* window = new Window("DemoEngine_1", 1280, 720, false);
 		Scene* scene   = new Scene("Intro", *window);
+
+		glClearColor(0.25f, 0.25f, 0.25f, 1.0f);
 
 		string path = "../../assets/sphere.obj";
 
@@ -90,26 +92,30 @@ namespace engine
 		string playBall  = "Ball";
 
 		Entity* camera		= new Entity(scene);
+		Entity* light		= new Entity(scene);
 		Entity* playerLeft  = new Entity(scene, playLeft);
 		Entity* playerRight = new Entity(scene, playRight);
 		Entity* ball		= new Entity(scene, playBall);
 		
 
-		GetScene("Intro")->renderSystem->CreateAndAddMeshToRender(ball, path);
+		/// Creacion Meshes jugables
+		GetScene("Intro")->renderSystem->CreateAndAddMeshToRender(playerLeft, path);
+		GetScene("Intro")->renderSystem->CreateAndAddMeshToRender(ball, path);		
+
+		/// Adicion del player a la entidad
+		GetScene("Intro")->updateSystem->AddPlayerComponent(playerLeft , 0.1f, *GetScene(0)->inputSystem);
+
+		//Movimiento entidades pos inicial
+		playerLeft ->Get_Transform()->Translate(Vector3(0,0,-10.f));
+		ball->Get_Transform()->Translate(Vector3(0, 0, -10.f));
 		
-		GetScene("Intro")->renderSystem->CreateAndAddCameraToRender(camera);	
-
-		//input System with player (update)
-		playerLeft ->Get_Transform()->Set_Position(Vector3(0,0,0));
-		playerRight->Get_Transform()->Set_Position(Vector3(0,0,0));
-
-		ball->Get_Transform()->Set_Position(Vector3(0, 0, 0));	
-
-
-		GetScene("Intro")->updateSystem->AddPlayerComponent(playerLeft , 0.1f, *GetScene("Intro")->inputSystem);
-		GetScene("Intro")->updateSystem->AddPlayerComponent(playerRight, 0.1f, *GetScene("Intro")->inputSystem);
 
 		GetScene("Intro")->updateSystem->AddBallComponent(ball, 0.3f, ball->Get_Transform());
+
+		/// Adicion de la camara y luz en escena
+		GetScene("Intro")->renderSystem->CreateAndAddCameraToRender(camera);
+		GetScene("Intro")->renderSystem->CreateAndAddLightToRender(light);
+		light->Get_Transform()->Translate(Vector3(10.f, 10.f, 10.f));
 
 		// Initialize kernel
 		ActiveScene("Intro");
