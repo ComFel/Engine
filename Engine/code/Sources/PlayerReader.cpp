@@ -14,6 +14,8 @@ namespace engine
 	{
 		this->myEntity = entity;
 		this->myPlayer = playerController;
+		this->dirDown  = 0;
+		this->dirUp	   = 0;
 	}
 
 
@@ -29,6 +31,10 @@ namespace engine
 
 			case SDLK_w:
 				dirUp = 1;
+				break;
+
+			case SDLK_ESCAPE:
+				SDL_Quit();
 				break;
 
 			default:
